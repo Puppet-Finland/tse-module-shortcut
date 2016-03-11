@@ -12,9 +12,14 @@ Example:
     shortcut { 'C:/myshortcut.lnk':
       target => 'C:/Windows/system32/cmd.exe',
     }
+    
+    shortcut { 'C:/other_shortcut.lnk'
+      ensure => 'absent',
+    }
 
 Parameters:
 
+* ensure
 * target
 * path
 * arguments
